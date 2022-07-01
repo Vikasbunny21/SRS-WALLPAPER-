@@ -1,65 +1,73 @@
-import androidx.appcompat.app.AppCompatActivity; 
-import android.app.WallpaperManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.AnimationDrawable; 
-import android.graphics.drawable.BitmapDrawable; import 
-android.graphics.drawable.Drawable;
-import android.os.Bundle; 
-import android.view.View; 
-import android.widget.Button; 
-import android.widget.Toast; 
-import java.io.IOException; 
-import java.util.Timer;
-import java.util.TimerTask;
-public class MainActivity extends AppCompatActivity { 
-Button changewallpaper;
-Timer mytimer; Drawable 
-drawable; 
-WallpaperManager wpm; 
-int prev=1;
-@Override
-protected void onCreate(Bundle savedInstanceState) { 
-super.onCreate(savedInstanceState); 
-setContentView(R.layout.activity_main);
-mytimer = new Timer();
-wpm = WallpaperManager.getInstance(this); 
-changewallpaper = findViewById(R.id.button);
-changewallpaper.setOnClickListener(new View.OnClickListener() { 
-@Override public void onClick(View view) {
-setWallpaper();
-}
-});
-}
-private void setWallpaper() { 
-mytimer.schedule(new TimerTask() { 
-@Override
-public void run() { 
-if(prev==1) {
-drawable = getResources().getDrawable(R.drawable.one); 
-prev = 2;
-else if(prev==2) {
-
-drawable = getResources().getDrawable(R.drawable.two); 
-prev=3;
-}
-else if(prev==3) {
-drawable = getResources().getDrawable(R.drawable.three); 
-prev=4;
-}
-else if(prev==4) {
-drawable = getResources().getDrawable(R.drawable.four); 
-prev=5;
-}
-else if(prev==5) {
-drawable = getResources().getDrawable(R.drawable.five);
-prev=1;
-}
-Bitmap wallpaper = ((BitmapDrawable)drawable).getBitmap(); try 
-{
-wpm.setBitmap(wallpaper);
-} catch (IOException e) { 
-e.printStackTrace();
-}
-}
-},0,30000); } }
+SRS WALLPAPER APK
+Table of Contents -
+• Application Information
+• Application Description
+• How to install SRS Wallpaper apk for Android?
+• How to install SRS Wallpaper apk for pc?
+Application Information -
+• Version :”2.0”
+• Updated on 20/06/2022
+• Download Size:10mb
+• Application Requirement
+1. Control Vibration
+2. Prevent from unknown image
+3. Looking nice for mobile
+Application Features :
+❖It will set as wallpaper instead of having an default 
+wallpaper It should also set as our image as 
+wallpaper.
+❖Offline application .
+❖Adaptive Wallpaper according to your device 
+screen.
+❖An app containing a plethora of beautiful 4k & HD 
+wallpapers.
+❖We are in service to provide you an eclectic 
+collection of HD and 4K wallpapers.
+❖Now, you don’t have to tediously search the web 
+for wallpapers, all you have to do is few taps in 
+order to get high-resolution HD & 4k wallpapers of 
+your favorite genre. Complement your screen with 
+exclusive wallpapers because we are aligned to the 
+current trends in the world to provide you the best 
+in class wallpapers.
+Simply Beautiful
+❖An app that will make you fall in love with 
+wallpapers. It’s UI is designed to give a clutter-free 
+experience by removing all the excess. Hassle free 
+experience with a minimalistic interface and the 
+negligible number of a relevant advertisement. All 
+the wallpapers in the app are free to download.
+Save battery and resources. 
+❖The application displays only adapted to the size of 
+your screen Wallpapers. This allows you to 
+conserve battery power and Internet traffic, and 
+use the app at maximum speed without losing
+image quality. The app works on dynamic loading 
+algorithm which saves the data if few wallpapers 
+are already present in the downloads section. 
+Creative wallpapers 
+❖Wall X is a high quality, selective collection 4k & HD 
+wallpapers exclusively made by artists, for your 
+device. Your phone and tablet have never been so 
+good-looking. 
+Description -
+We can set any photo as wallpaper in an single click easily.
+How to install SRS Wallpaper apk for an Android :
+Download Wallpaper apk file from some apk.com, follow these 
+steps:
+Update phone settings :
+▪ Go to your phone settings page
+▪ Tap security or applications
+▪ Check the unknown sources
+▪ Confirm with ok
+Go to downloads :
+▪ Open downloads on your device by going to my files or 
+files 
+▪ Tap install when prompted the apk file you download will 
+be installed on your device 
+How to install wallpaper apk on windows 7/8/9/10/11. 
+✓ Download or enter the properties has the image to 
+need set as wallpaper
+Using Emulator :
+➢ Download a photo or go to pictures and click set 
+as wallpaper option and select ok.
